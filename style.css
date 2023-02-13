@@ -1,0 +1,1228 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white-hover: #80858F;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+  background: black;
+
+  
+  margin: 0 auto;
+  
+  
+}
+
+.above-title {
+ display: flex;
+ align-items: center;
+}
+
+  .above-title-img {
+
+  }
+
+  .above-title-text {
+    padding-left: 8px;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #57B8FF;
+  }
+
+.btn {
+  background: #57B8FF;
+  border: none;
+
+  width: 203px;
+  height: 70px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 74px;
+  text-transform: capitalize;
+}
+
+.conteiner  {
+  max-width: 1470px;
+  padding: 0 50px;
+  margin: 0 auto;
+}
+
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+  .header__bg{
+    background-color: #57B8FF;
+
+    width: 44%;
+    height: 100%;
+
+    position: absolute;
+  }
+
+    .header__inner {
+      position: relative;
+    }
+
+      .header__top {
+        padding-top: 20px;
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+        .header__nav {
+          font-size: 16px;
+          line-height: 26px;
+          color: white;
+        }
+
+          .header__list {
+            display: flex;
+          }
+
+            .header__list-item{
+              padding-left: 60px;
+            }
+
+            .header__list-item:hover{
+              color: #FAC422;
+            }
+
+            .header__list-item--active {
+              color: #FAC422;
+            }
+
+        .header__top-right-side {
+          display: flex;
+          align-items: center;
+        }
+
+          .header__basket {
+            display: flex;
+            align-items: flex-start;
+          }
+
+            .header__basket-img {
+
+            }
+
+            .header__basket-value {
+              font-size: 11px;
+              text-align: center;
+
+              color: black;
+              background: white;
+              border-radius: 9px;
+
+              width: 21px;
+              height: 18px;
+
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              position: relative;
+              top:-8px;
+
+            }
+
+          .header__top-btn {
+            border: 1px solid white;
+
+            width: 178px;
+            height: 62px;
+            margin-left: 20px;
+          }
+
+            .header__top-btn:hover {
+              color: #ffde79;
+              border: 1px solid rgba(255, 255, 255, 0.514);
+            }
+
+        .header__menu-btn {
+          display: none;
+        }
+
+    .header__bottom {
+      padding: 215px 0 250px 0;
+      display: flex;
+      justify-content: space-between;
+    }
+
+      .header__text {
+        
+      }
+
+        .header__above-title {
+
+        }
+
+          .header__above-title-img {
+
+          }
+
+          .header__above-title-text {
+
+          }
+
+        .header__title {
+          font-size: 72px;
+          line-height: 86px;
+
+          max-width: 656px;
+          padding-top: 14px;
+        }
+
+          .header__title-decor {
+            position: relative;
+            width: 100%;
+          }
+
+          .header__title-decor::after {
+            content: "";
+            width: 98%;
+            height: 16px;
+            background: url("./images/header/yellow-underline.png");
+            position: absolute;
+            top: 85px;
+            left: 10px;
+            
+          }
+
+        .header__description {
+          font-size: 18px;
+          line-height: 28px;
+          color: #999999;
+
+          max-width: 615px;
+          padding-top: 43px;
+        }
+
+          .header__vertical-sm {
+            
+            position: absolute;
+            
+            padding-left: 20px;
+            left: -30px;
+            display: flex;
+            transform: rotate(-90deg);
+            transform-origin: left;
+          }
+
+            .header__vertical-item {
+              
+              font-size: 11px;
+              line-height: 25px;
+              color: #80858F;
+
+              padding-right: 55px;
+            }
+
+            .header__vertical-item:hover {
+              color: #bbbfc7;
+            }
+
+        .header__links {
+          padding-top: 53px;
+          display: flex;
+          align-items: center;
+        }
+
+          .header__bottom-btn {
+            font-size: 18px;
+            line-height: 28px;
+
+            width: 203px;
+            height: 70px;
+          }
+
+            .header__bottom-btn:hover {
+              background: #32aaff;
+            }
+
+          .header__link{
+            font-size: 18px;
+            line-height: 28px;
+
+            padding-left: 40px;
+          }
+
+            .header__link:hover {
+              color: var(--white-hover);
+            }
+      
+
+      .header__img-wrapper {
+        max-width: 660px;
+
+        display: flex;
+        align-items: center;
+      }
+
+        .header__img {
+          width: 100%;
+        }
+
+.sponsors {
+  background: #FDD04A;
+}
+
+  .sponsors__inner {
+    padding: 128px 0 130px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+    .sponsors__text {
+      max-width: 576px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+      .sponsors-title {
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 58px;
+        
+        text-transform: capitalize;
+        color: #222730;
+      }
+
+      .sponsors__title-decor {
+        position: relative;
+      }
+
+        .sponsors__title-decor::after {
+          content: "";
+          width: 112%;
+          height: 12px;
+          background: url("./images/blue-underline.svg");
+          position: absolute;
+          top: 65px;
+          left: -25px;
+        }
+
+      .sponsors-description {
+        font-size: 16px;
+        line-height: 26px;
+        color: #555555;
+
+        padding-top: 44px;
+      }
+
+    .sponsors__list {
+      
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      padding-top: 41px;
+    }
+
+.gaming-needs {
+  background: url(./images/gaming-needs_bg.png);
+
+  background-size:cover;
+  background-position: 50%;
+}
+
+  .gaming-needs__inner {
+    padding: 130px 0;
+  }
+
+    .gaming-needs__header {
+      display: flex;
+      justify-content: center;
+    }
+
+      .gaming-needs__header-content {
+        max-width: 720px;
+        text-align: center;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+        .gaming-needs__title {
+          font-size: 64px;
+          line-height: 74px;
+
+          padding-top: 12px;
+        }
+
+        .gaming-needs__description {
+          font-size: 20px;
+          line-height: 32px;
+          color: rgba(223, 223, 223, 0.8);
+
+          padding-top: 39px;
+        }
+
+      .gaming-needs__items {
+        padding-top: 61px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+      }
+
+        .gaming-needs__item {
+          background: rgba(255, 255, 255, 0.15);
+          border-radius: 20px;
+          
+          padding: 35px;
+        }
+
+          .gaming-needs__item-title {
+            display: flex;
+          }
+
+            .gaming-needs__item-title-decor {
+              width: 29px;
+              height: 29px;
+            }
+
+            .gaming-needs__item-title-text {
+              font-size: 32px;
+              line-height: 42px;
+
+              padding-left: 16px;
+            }
+
+          .gaming-needs__item-description {
+            font-size: 18px;
+            line-height: 28px;
+            color: rgba(223, 223, 223, 0.8);
+
+            padding: 19px 0 0 40px ;
+          }
+
+.cloud-gaming {
+  display: flex;
+  
+}
+
+  .cloud-gaming__inner {
+    padding: 130px 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+    .cloud-gaming__content {
+      max-width: 720px;
+    }
+
+      .cloud-gaming__above-title {
+
+      }
+
+      .cloud-gaming__title {
+        font-size: 64px;
+        line-height: 74px;
+
+        padding-top: 12px;
+      }
+
+      .cloud-gaming__description {
+        padding-top: 38px;
+        font-size: 20px;
+        line-height: 30px;
+        color: rgba(223, 223, 223, 0.8);
+      }
+      
+      .cloud-gaming__btn {
+        margin-top: 54px;
+        width: 203px;
+        height: 70px;
+      }
+
+        .cloud-gaming__btn:hover {
+          background: #32aaff;
+        }
+
+    .cloud-gaming__img-wrapper {
+       max-width: 492px;
+       min-width: 300px;
+       margin-left: 30px;
+       position: relative;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+
+      .cloud-gaming__img {
+        width: 100%;
+      }
+
+      .cloud-gaming__img-btn {
+        position: absolute;
+        cursor: pointer;
+      }
+
+        .cloud-gaming__img-btn:hover {
+          filter: invert(100%);
+        }
+
+      .cloud-gaming__img {
+
+      }
+
+.customize {
+  background: #2A313C;
+}
+
+  .customize__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+    .customize__img-wrapper {
+      max-width: 596px;
+
+      display: flex;
+
+    }
+
+      .customize__img {
+        width: 100%;
+
+      }
+
+    .customize__content {
+      padding: 30px 0 30px 30px;
+      max-width: 596px;
+    }
+
+      .customize__title {
+        font-size: 63px;
+        line-height: 74px;
+
+        padding-top: 12px;
+      }
+
+      .customize__description {
+        font-size: 20px;
+        line-height: 30px;
+        color: rgba(223, 223, 223, 0.8);
+
+        padding-top: 38px;
+      }
+
+      .customize__slider {
+        margin-top: 54px;
+        width: 100%;
+        position: relative;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+        .customize__slider-btns {
+          width: 100%;
+
+          position: absolute;
+
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+
+          .customize__slider-btn {
+            
+            width: 44px;
+            height: 44px;
+            background: #3F8CFF;
+            cursor: pointer;
+          }
+
+            .customize__slider-btn:hover {
+              width: 40px;
+              height: 40px;
+              background: #5498ff;
+            }
+
+          .customize__slider-item {
+            margin-right: 20px;
+          }
+
+          .customize__slider-item:last-child {
+            margin-right: 0px;
+          }
+
+            .customize__slider-item-img {
+              width: 100%;
+            }
+
+
+            .customize__slider-item--active {
+              border: 11px solid #3B3D46;
+              border-radius: 20px;
+            }
+
+.game-advantages {
+
+}
+
+  .game-advantages__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+    .game-advantages__item {
+      height: 732px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+
+      
+    }
+
+    .game-advantages__item-1 {
+      background: url(./images/game-advantages/bg-1.png);
+      background-size: cover;
+      background-position: 50%;
+    }
+
+    .game-advantages__item-2 {
+      background: url(./images/game-advantages/bg-2.png);
+      background-size: cover;
+      background-position: 50%;
+    }
+
+    .game-advantages__item-3 {
+      background: url(./images/game-advantages/bg-3.png);
+      background-size: cover;
+      background-position: 50%;
+    }
+
+      .game-advanrages__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+        .game-advantages__title {
+          padding-top: 30px;
+          font-size: 48px;
+          line-height: 58px;
+        }
+
+.news {
+
+}
+  .news__inner {
+    padding: 130px 0;
+  }
+
+    .news__header {
+      display: flex;
+
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+      .news__title {
+        padding-top: 12px;
+      }
+
+      .news-btn {
+        width: 175px;
+        height: 70px;
+      }
+
+      .news-btn:hover {
+        background: #32aaff;
+      }
+
+    .news__content {
+      padding-top: 64px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+      .news__last-news {
+        margin-right: 20px;
+      }
+
+        .news__last-news-img-wrapper {
+          
+         
+        }
+
+          .news__last-news-img {
+            width: 100%;
+          }
+
+          .news__last-news-date {
+            font-size: 18px;
+            line-height: 18px;
+            color: #57B8FF;
+
+            padding-top: 54px;
+          }
+
+          .news__last-news-title {
+            font-size: 36px;
+            line-height: 46px;
+
+            padding-top: 28px;
+          }
+
+      .news__old-news {
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+      }
+
+        .news__old-news-item {
+          width: 312px;
+        }
+
+          .news__old-news-date {
+            font-size: 16px;
+            line-height: 16px;
+            color: #57B8FF;
+
+            padding-top: 30px;
+          }
+
+          .news__old-news-title {
+            font-size: 23px;
+            line-height: 34px;
+
+            padding-top: 20px;
+          }
+
+.join-community {
+  background: url(./images/join-community-bg.png);
+  background-size: cover;
+  background-position: 50%;
+}
+
+  .join-community__inner {
+    padding: 130px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+    .join-community__content {
+      max-width: 846px;
+      text-align: center;
+    }
+
+      .join-community__title {
+        font-size: 72px;
+        line-height: 82px;
+        color: #141820;
+      }
+
+        .join-community__title-decor {
+          position: relative;
+        }
+
+        .join-community__title-decor::after {
+          content: "";
+          width: 92%;
+          height: 16px;
+          background: url("./images/blue-underline-BIG.png");
+          position: absolute;
+          top: 88px;
+          left: 27px;
+
+        }
+
+      .join-community__description {
+        font-size: 17px;
+        line-height: 28px;
+        color: #555555;
+
+        padding-top: 51px;
+      }
+
+      .join-community__form {
+        margin: 0 auto;
+        max-width: 670px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding-top: 45px;
+      }
+
+        .join-community__email {
+          
+          color: #555555;
+          border: none;
+
+          height: 80px;
+          width: 66%;
+        }
+
+          .join-community__email[type="email"] {
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 28px;
+
+            padding-left: 20px;
+          }
+
+        .join-community__submit-btn {
+          width: 34%;
+          cursor: pointer;
+        }
+
+          .join-community__submit-btn[type="submit"] {
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 28px;
+            color: #FFFFFF;
+          }
+
+        .join-community__submit-btn:hover {
+          height: 80px;
+        }
+
+.footer {
+  background: #222730;
+}
+
+  .footer__inner {
+    padding: 130px 0 60px 0;
+  }
+
+    .footer__content {
+      padding-bottom: 47px;
+      border-bottom: 1px solid #3E3E3E;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    }
+
+      .footer__logo {
+        width: 289px;
+      }
+
+        .footer__logo-descr {
+          font-size: 15px;
+          line-height: 25px;
+          color: #999999;
+
+          padding-top: 35px;
+        }
+
+      .footer__menu-items {
+
+      }
+
+        .footer__title {
+          font-size: 18px;
+          line-height: 30px;
+        }
+
+          .footer__list {
+            padding-top: 23px;
+          }
+
+            .footer__list-item {
+              font-size: 15px;
+              line-height: 38px;
+              color: #999999;
+            }
+
+            .footer__list-item:hover {
+              color: var(--white-hover);
+            }
+
+        .footer__social-media {
+          width: 240px;
+          display: flex;
+          flex-direction: column;
+          justify-self: flex-end;
+        }
+
+          .footer__social-media-items {
+            
+            padding-top: 23px;
+
+            display: flex;
+            justify-content: space-between;
+          }
+
+    .footer__copyright {
+      padding-top: 48px;
+
+      text-align: center;
+      line-height: 18px;
+      color: #898989;
+    }
+
+
+
+@media screen and (max-width: 1300px) {
+  
+  .sponsors__text {
+    padding-bottom: 20px;
+  }
+  
+  .sponsors__item-link {
+    display: flex;
+    justify-content: center;
+  }
+  
+    .sponsors__list {
+      align-self: center;
+      padding: 0;
+      display: grid;
+      gap: 32px;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+  
+}
+
+@media screen and (max-width: 1200px) {
+  .news__content {
+    flex-direction: column;
+  }
+
+    .news__last-news {
+      max-width: 700px;
+      margin-right: 0;
+      padding-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+
+  .conteiner  {
+    padding: 0 30px;
+  }
+
+  .header__bg {
+    width: 100%;
+    height: 38%;
+    
+  }
+
+  .header__nav, .header__top-btn {
+    display: none;
+  }
+
+  .header__menu-btn {
+    margin: 0 20px 0 40px;
+    display: block;
+    width: 34px;
+    height: 34px;
+  }
+
+    .header__menu-img {
+      filter: invert(100%);
+      display: block;
+      width: 34px;
+      height: 34px;
+    }
+
+    .header__bottom {
+      padding-top: 50px;
+      padding-bottom: 30px;
+      flex-wrap: wrap;
+      align-content: center;
+      flex-direction: column-reverse;
+    }
+
+      .header__img-wrapper {
+        margin-top: 50px;
+      }
+
+        .header__vertical-sm {
+          
+
+          position: static;
+          left: 0px;
+          
+          padding-left: 0;
+          padding-top: 40px;
+          display: flex;
+          transform: rotate(0);
+          transform-origin:unset;
+        }
+
+          .header__vertical-item {
+            font-size: 14px;
+          }
+
+  .cloud-gaming__inner {
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+    .cloud-gaming__above-title {
+      justify-content: center;
+    }
+
+      .cloud-gaming__btn {
+        margin: 20px auto;
+      }
+
+    .cloud-gaming__img-wrapper {
+      margin: 0;
+    }
+
+  .customize__inner {
+    flex-direction: column;
+  }
+
+    .customize__content {
+      padding-left: 0;
+    }
+  
+  .game-advantages__title {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  
+  .footer__content {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .footer__menu-items {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+
+  .gaming-needs__items {
+    grid-template-columns: 1fr;
+  }
+} 
+
+
+@media screen and (max-width: 730px) {
+
+  .sponsors__list {
+    column-gap: 10px;
+    row-gap: 32px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+    .sponsors__item {
+      width: 100%;
+    }
+
+  
+  .cloud-gaming__title {
+    font-size: 50px;
+  }
+
+  .game-advantages__inner {
+    grid-template-columns: 1fr;
+    
+  }
+
+    .game-advantages__item {
+      height: 250px;
+    }
+
+      .game-advantages__img {
+        width: 90px
+      }
+
+      .game-advantages__title {
+        padding-top: 15px;
+      }
+
+  .news__old-news {
+    grid-template-columns: 1fr;
+  }
+
+    .news__old-news-item {
+      width: 100%;
+    }
+
+    .news__old-news-img { 
+      width: 100%;
+    }
+
+  .news__header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .news__title {
+    font-size: 45px;
+    padding-bottom: 10px;
+  }
+
+    .news__above-title {
+      justify-content: center;
+    }
+
+    .footer__content {
+      grid-template-columns: 1fr;
+    }
+
+      .footer__content > * {
+        display: unset;
+      }
+
+      .footer__social-media {
+        justify-self: unset;
+      }
+}
+
+@media screen and (max-width: 500px) {
+
+  .header__title {
+    font-size: 40px;
+    line-height: 60px;
+  }
+
+    .header__title-decor::after {
+      top: 50px;
+
+      
+      
+    }
+
+    .header__vertical-item {
+      padding-right: 0;
+    }
+
+    .header__vertical-sm {
+      justify-content: space-around;
+    }
+
+    .header__links {
+      flex-direction: column;
+    }
+
+      .header__link {
+        padding: 20px;
+      }
+
+  .gaming-needs__title {
+    font-size: 40px;
+    line-height: 60px;
+  }
+
+  .cloud-gaming__title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .customize__title {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .customize__slider-btn {
+    width: 35px;
+    height: 35px;
+  }
+
+  .news__last-news-title {
+    font-size: 25px;
+    line-height: 40px;
+  }
+
+  .join-community__inner {
+    padding: 40px 0;
+  }
+
+    .join-community__title {
+      font-size: 50px;
+    }
+
+    .join-community__form {
+      flex-direction: column;
+    }
+
+      .join-community__submit-btn {
+        width: 200px;
+        margin-top: 20px;
+      }
+
+}
+
+
+@media screen and (max-width: 425px) {
+
+  .header__title {
+    font-size: 30px;
+    line-height: 50px;
+  }
+
+  .sponsors-title {
+    font-size: 38px;
+  }
+
+    .header__title-decor::after {
+      top: 35px;
+    }
+}
+
+    
+
+  
+
+
+
+
+
+      
